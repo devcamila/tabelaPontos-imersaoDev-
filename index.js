@@ -69,33 +69,33 @@ function exibeJogadoresNaTela(jogadores) {
     elemento += "<td>" + jogadores[i].derrotas + "</td>";
     elemento += "<td>" + jogadores[i].pontos + "</td>";
     elemento +=
-    "<td><button class='botao-table' style=''onClick='adicionarVitoria(" +
-    i +
-    ")'>Vitória</button></td>";
-  elemento +=
-    "<td><button class='botao-table-min' onClick='adicionarVitoria(" +
-    i +
-    ")'>V</button></td>";
+      "<td class='td-max'><button class='botao-table' style=''onClick='adicionarVitoria(" +
+      i +
+      ")'>Vitória</button></td>";
+    elemento +=
+      "<td class='td-min'><button class='botao-table-min' onClick='adicionarVitoria(" +
+      i +
+      ")'>V</button></td>";
 
-  elemento +=
-    "<td><button class='botao-table' onClick='adicionarEmpate(" +
-    i +
-    ")'>Empate</button></td>";
-  elemento +=
-    "<td><button class='botao-table-min' onClick='adicionarEmpate(" +
-    i +
-    ")'>E</button></td>";
+    elemento +=
+      "<td class='td-max'><button class='botao-table' onClick='adicionarEmpate(" +
+      i +
+      ")'>Empate</button></td>";
+    elemento +=
+      "<td class='td-min'><button class='botao-table-min' onClick='adicionarEmpate(" +
+      i +
+      ")'>E</button></td>";
 
-  elemento +=
-    "<td><button class='botao-table' onClick='adicionarDerrota(" +
-    i +
-    ")'>Derrota</button></td>";
-  elemento +=
-    "<td><button class='botao-table-min' onClick='adicionarDerrota(" +
-    i +
-    ")'>D</button></td>";
+    elemento +=
+      "<td class='td-max'><button class='botao-table' onClick='adicionarDerrota(" +
+      i +
+      ")'>Derrota</button></td>";
+    elemento +=
+      "<td class='td-min'><button class='botao-table-min' onClick='adicionarDerrota(" +
+      i +
+      ")'>D</button></td>";
 
-  elemento += "</tr>";
+    elemento += "</tr>";
   }
 
   var tabelaJogadores = document.getElementById("tabelaJogadores");
