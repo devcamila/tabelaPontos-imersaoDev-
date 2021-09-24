@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Press+Start+2P&display=swap");
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-family: "Baloo 2", cursive;
+  background-color: #2f2c2f;
+}
+
+/** Container */
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  margin: auto;
+}
+
+.page-title {
+  color: #07deb2;
+  margin: 0 0 25px;
+  font-family: "Press Start 2P", cursive;
+  border: rgb(27, 25, 25);
+  text-shadow: 3px 3px #d8579c;
+}
+
+.page-logo {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.alura-logo {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #c1e582;
+  padding: 10px;
+  border: 3px solid #9fd745;
+}
+
+.alura-logo:hover {
+  background-color: #cbdcb0;
+}
+
+/** Tabela */
+table {
+  border-collapse: collapse;
+  width: 30%;
+  margin: auto;
+  background-color: #2f2c2f;
+}
+
+h1 {
+  color: white;
+}
+
+th,
+tr,
+td {
+  border: solid 2px rgb(105, 89, 125);
+  border-radius: 3px;
+  padding: 5px;
+  color: #d8579c;
+}
+
+.bg-table {
+  padding: 30px;
+  background-color: #91d1f2;
+  margin: auto;
+  width: max-content;
+  border-radius: 5px;
+  box-shadow: 0 0 1em rgb(105, 89, 125);
+}
+
+.botao-table {
+  border: 2px solid #b14e98;
+  border-radius: 8px;
+  background-color: transparent;
+  text-shadow: 3px 3px 6px #c785b7;
+  color: rgb(240, 188, 224);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+  width: max-content;
+  margin: 5px;
+  box-shadow: 3px 3px 3px #b14e98;
+}
+
+.botao-table-min {
+  display: none;
+  border: 2px solid #b14e98;
+  border-radius: 8px;
+  background-color: transparent;
+  text-shadow: 3px 3px 6px #c785b7;
+  color: rgb(240, 188, 224);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px;
+  width: max-content;
+  margin: 5px;
+  box-shadow: 3px 3px 3px #b14e98;
+}
+
+.botao-table:hover,
+.botao-table-min:hover {
+  background-color: rgba(105, 89, 125, 0.734);
+  transition: duration 3ms;
+}
+
+.td-min {
+  padding: 0px;
+}
+
+#new-user,
+#reset {
+  border: 2px solid #b14e98;
+  border-radius: 8px;
+  background-color: transparent;
+  text-shadow: 3px 3px 6px #c785b7;
+  color: rgb(240, 188, 224);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  width: 140px;
+  margin: 30px 10px;
+  box-shadow: 3px 3px 3px #b14e98;
+}
+
+#reset a {
+  text-shadow: 3px 3px 6px #c785b7;
+  color: rgb(240, 188, 224);
+}
+
+#new-user:hover,
+#reset:hover {
+  background-color: rgba(105, 89, 125, 0.734);
+  transition: duration 3ms;
+}
+
+/** Imagens */
+.flip-neon {
+  width: 250px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.pac-neon {
+  width: 50px;
+  margin: auto;
+  margin-right: 30px;
+}
+
+.mountain {
+  width: 250px;
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+}
+
+.rocket {
+  width: 80px;
+  position: absolute;
+  right: 90px;
+  bottom: 300px;
+}
+
+.control-neow {
+  width: 280px;
+  position: absolute;
+  top: -30px;
+  left: 30px;
+}
+
+.light {
+  font-family: "Press Start 2P", cursive;
+  position: absolute;
+  top: 170px;
+  left: 70px;
+  padding: 10px;
+  color: rgb(120, 106, 137);
+}
+
+.mouse {
+  width: 100px;
+  position: absolute;
+  top: 45px;
+  right: 37px;
+}
+
+.play {
+  width: 200px;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+.light:hover {
+  color: rgb(231, 215, 250);
+  text-shadow: 3px 3px 6px #fc5658;
+}
+
+/** Rodapé */
+footer {
+  position: relative;
+  top: 200px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+}
+
+li a {
+  color: rgb(240, 188, 224);
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+}
+
+.git:hover,
+.link:hover,
+.twitter:hover {
+  color: #ebeae7;
+  border: none;
+  text-shadow: 0 0 1em #9fd745;
+}
+
+/** Responsive */
+@media screen and (max-width: 1280px) {
+  .page-title {
+    font-size: 25px;
+  }
+
+  .control-neow {
+    width: 200px;
+    top: -20px;
+  }
+
+  .light {
+    top: 120px;
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page-title {
+    font-size: 25px;
+  }
+
+  .control-neow {
+    width: 100px;
+    top: -10px;
+  }
+
+  .light {
+    top: 60px;
+    left: 35px;
+    width: 30px;
+    line-height: 20px;
+  }
+
+  .flip-neon,
+  .mountain {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .page-title {
+    font-size: 25px;
+    margin: 120px auto 30px;
+  }
+
+  .control-neow {
+    width: 100px;
+  }
+
+  .light {
+    top: 60px;
+    left: 35px;
+    width: 30px;
+    line-height: 20px;
+  }
+
+  .flip-neon,
+  .mountain {
+    width: 150px;
+  }
+
+  .mouse {
+    top: 49px;
+    width: 50px;
+    right: 55px;
+  }
+
+  .rocket {
+    bottom: 200px;
+    right: 60px;
+  }
+
+  .pac-neon {
+    margin-right: 10px;
+  }
+
+  footer {
+    top: 100px;
+  }
+
+  li a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .page-title {
+    font-size: 25px;
+    margin: 100px auto 30px;
+  }
+
+  .control-neow {
+    width: 100px;
+  }
+
+  .light {
+    top: 60px;
+    left: 35px;
+    width: 30px;
+    line-height: 20px;
+  }
+
+  .flip-neon,
+  .mountain,
+  .rocket,
+  .mouse {
+    display: none;
+  }
+
+  li a {
+    font-size: 12px;
+  }
+
+  .bg-table {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .botao-table {
+    display: none;
+  }
+
+  .botao-table-min {
+    display: block;
+  }
+
+  .td-max {
+    display: none;
+  }
+
+  .td-min {
+    padding: 3px;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style -neon.css">
+
+    <title>Pontos - Dev Camila</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Tabela de classificação
+        </h1>
+        <img src="img-neon/logo.png" class="page-logo" alt=""><br>
+        <a href="/index.html"><p class="light">Tema Claro</p></a>
+        <div class="bg-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Vitórias</th>
+                        <th>Empates</th>
+                        <th>Derrotas</th>
+                        <th>Pontos</th>
+                        <th colspan="6">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaJogadores">
+                </tbody>
+            </table>
+        </div>
+        <button id="new-user" onclick="AdicionarUser()">NOVO PARTICIPANTE</button>
+        <button id="reset"><a href="./neon.html">APAGAR DADOS</a></button>
+
+        <!-- Imagens -->
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+        <a href="./index.html"><img src="img-neon/control-neow.png" alt="" class="control-neow"></a>
+        <img src="img-neon/flip.png" alt="" class="flip-neon">
+        <img src="img-neon/mountain.png" alt="" class="mountain">
+        <img src="img-neon/rocket.png" alt="" class="rocket">
+
+        <a href="https://alura.com.br/" target="_blank"><img src="img-neon/mouse.png" alt="" class="mouse"></a>
+
+        <!-- Rodapé -->
+        <footer className="footer-container">
+            <nav className="footer-nav">
+                <ul className="footer-ul">
+                    <img src="img-neon/pac-neon.png" alt="" class="pac-neon">
+                    <li><a class="git" target="blank" href="https://github.com/devcamila">Github</a></li>
+                    <li><a class="link" target="blank" href="https://www.linkedin.com/in/camila-lacerda/">Linkedin</a>
+                    </li>
+                    <li><a class="twitter" target="blank" href="https://twitter.com/devcamila3">Twitter</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
